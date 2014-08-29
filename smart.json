@@ -1,12 +1,6 @@
 {
   "packages": {
-    "collection2": {
-      "git": "https://github.com/aldeed/meteor-collection2",
-      "tag": "v0.4.1"
-    },
-    "autoform": {
-      "git": "https://github.com/aldeed/meteor-autoform",
-      "tag": "v0.12.0"
-    }
+    "collection2": {},
+    "autoform": "0.16.1"
   }
 }
