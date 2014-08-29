@@ -1,3 +1,7 @@
 <template name="productItem">
   {{> quickForm collection=collection id=formName type="insert"}}
+
+  {{#autoForm collection=collection id=formName type="insert"}}
+  {{> afQuickField name="name"}}
+  {{/autoForm}}
 </template>
