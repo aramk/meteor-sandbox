@@ -1,7 +1,18 @@
+SimpleSchema.debug = true;
+SimpleSchema.strict = true;
+
 var schema = new SimpleSchema({
   name: {
     label: 'Name',
     type: String
+  },
+//  cost: {
+//    label: 'Cost',
+//    type: Number
+//  }
+  price: {
+    label: 'Price',
+    type: Number
   }
 });
 
@@ -10,7 +21,7 @@ Products = new Meteor.Collection('products', {
 });
 Products.schema = schema;
 
-var allowAll = function () {
+var allowAll = function() {
   return true;
 };
 Products.allow({

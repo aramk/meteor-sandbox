@@ -1,0 +1,8 @@
+<template name="submitForm">
+  Submit Form
+  {{#autoForm collection=collection schema=schema id=formName type=formType}}
+  {{> afQuickField name="name"}}
+  {{> afQuickField name="price"}}
+  <button type="submit">Save</button>
+  {{/autoForm}}
+</template>

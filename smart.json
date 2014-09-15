@@ -1,6 +1,9 @@
 {
   "packages": {
     "collection2": {},
-    "autoform": {}
+    "autoform": {
+      "git": "https://github.com/aramk/meteor-autoform",
+      "branch": "develop"
+    }
   }
 }
