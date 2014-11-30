@@ -1,7 +1,5 @@
-<head>
-</head>
-<body>
-  Meteor Sandbox
-  {{> productItem}}
-  {{> products}}
-</body>
+<template name="mainLayout">
+  <div class="content">
+    {{> yield}}
+  </div>
+</template>

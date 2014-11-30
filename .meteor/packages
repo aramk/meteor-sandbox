@@ -5,5 +5,12 @@
 
 standard-app-packages
 insecure
-autoform
-collection2
+coffeescript
+aldeed:autoform
+aldeed:collection2
+nooitaf:semantic-ui
+iron:router
+
+aramk:collection-table
+aramk:dropdown
+aramk:utility

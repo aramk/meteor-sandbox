@@ -1,7 +1,17 @@
 <template name="productItem">
-  <!--{{> quickForm collection=collection id=formName type="insert"}}-->
-
-  {{#autoForm collection=collection id=formName type="insert"}}
-  {{> afQuickField name="name"}}
+  {{#autoForm collection=collection id=formName type=formType doc=doc}}
+    {{> afQuickField name="name"}}
+    {{> afQuickField name="type" type="dropdown" items=types options="allowed"}}
+    {{> afFieldInput name="azimuth" type="azimuthArray"}}
+    {{> afQuickField name="size.width"}}
+    {{> afQuickField name="size.height"}}
+    {{> afQuickField name="size.depth"}}
+    {{> afQuickField name="size.deeper.height"}}
+    {{> afQuickField name="size.deeper.depth"}}
+    
+    {{> colorItem doc=color}}
+    
+    <button type="button" class="cancel button">Cancel</button>
+    <button type="submit">Submit</button>
   {{/autoForm}}
 </template>

@@ -1,0 +1,30 @@
+<template name="azimuthArray">
+  <div class="azimuth-array" data-name="{{name}}">
+    <label class="control-label">
+      <div class="value">{{label}}</div>
+      <div class="units">MJ/m<sup>2</sup>/year</div>
+    </label>
+    <table>
+      <tr class="labels">
+        <td>0/360&deg;</td>
+        <td>45&deg;</td>
+        <td>90&deg;</td>
+        <td>135&deg;</td>
+        <td>180&deg;</td>
+        <td>225&deg;</td>
+        <td>270&deg;</td>
+        <td>315&deg;</td>
+      </tr>
+      <tr class="values">
+        <td><input type="text" name="azimuth_0"/></td>
+        <td><input type="text" name="azimuth_45"/></td>
+        <td><input type="text" name="azimuth_90"/></td>
+        <td><input type="text" name="azimuth_135"/></td>
+        <td><input type="text" name="azimuth_180"/></td>
+        <td><input type="text" name="azimuth_225"/></td>
+        <td><input type="text" name="azimuth_270"/></td>
+        <td><input type="text" name="azimuth_315"/></td>
+      </tr>
+    </table>
+  </div>
+</template>

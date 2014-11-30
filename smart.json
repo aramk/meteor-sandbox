@@ -1,6 +1,12 @@
 {
   "packages": {
-    "collection2": {},
-    "autoform": {}
+    // "aldeed:autoform": {
+    //   "git": "https://github.com/aramk/meteor-autoform",
+    //   "branch": "develop"
+    // },
+    "aslagle:reactive-table": {
+      "git": "https://github.com/aramk/reactive-table",
+      "branch": "develop"
+    }
   }
 }

@@ -1,10 +1,10 @@
-var formName = 'productItem',
+var formName = 'colorItem',
     collection,
     collectionName,
     TemplateClass = Template[formName];
 
 TemplateClass.created = function() {
-  collection = Products;
+  collection = Colors;
   collectionName = collection._name;
 };
 
@@ -16,18 +16,11 @@ TemplateClass.helpers({
   collection: function () {
     return collection;
   },
-  types: function() {
-    return Products.simpleSchema().schema('type').allowedValues;
-  },
   formName: function () {
     return formName;
   },
   formType: function () {
     return this.doc ? 'update' : 'insert';
-  },
-  color: function() {
-    var colorId = this.color;
-    return colorId ? Colors.findOne(colorId) : null;
   }
 });
 
