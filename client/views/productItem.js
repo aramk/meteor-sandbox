@@ -39,6 +39,10 @@ TemplateClass.events({
   }
 });
 
+function submitSubform(outerTemplate) {
+  outerTemplate.$('form form').submit();
+}
+
 AutoForm.addHooks(formName, {
   formToDoc: function (doc) {
     return doc;
@@ -58,10 +62,12 @@ AutoForm.addHooks(formName, {
   before: {
     insert: function (doc) {
       console.log('before insert', this, arguments);
+      submitSubform(this.template);
       return doc;
     },
-    edit: function (docId, modifier) {
-      console.log('before edit', this, arguments);
+    update: function (docId, modifier) {
+      console.log('before update', this, arguments);
+      submitSubform(this.template);
       return modifier;
     }
   }
