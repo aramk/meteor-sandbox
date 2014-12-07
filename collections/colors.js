@@ -2,6 +2,10 @@ var schema = new SimpleSchema({
   name: {
     label: 'Name',
     type: String
+  },
+  rgb: {
+    label: 'RGB Hex String',
+    type: String
   }
 });
 

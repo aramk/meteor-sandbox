@@ -1,6 +1,8 @@
 <template name="colorItem">
+  <h2>Color Item</h2>
   {{#autoForm collection=collection id=formName type=formType doc=doc}}
     {{> afQuickField name="name"}}
+    {{> afQuickField name="rgb"}}
     <button type="button" class="cancel button">Cancel</button>
     <button type="submit">Submit</button>
   {{/autoForm}}

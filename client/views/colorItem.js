@@ -9,6 +9,8 @@ TemplateClass.created = function() {
 };
 
 TemplateClass.rendered = function() {
+  // NOTE: Uncommenting this line solves the issue with the inputs in this subform being cleared on
+  // load.
   AutoForm.resetForm(formName);
 };
 

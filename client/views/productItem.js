@@ -9,6 +9,7 @@ TemplateClass.created = function() {
 };
 
 TemplateClass.rendered = function() {
+  // NOTE: This has no effect on the colorItem subform (as intended).
   AutoForm.resetForm(formName);
 };
 
@@ -26,7 +27,8 @@ TemplateClass.helpers({
     return this.doc ? 'update' : 'insert';
   },
   color: function() {
-    var colorId = this.color;
+    var doc = this.doc;
+    var colorId = doc && doc.color;
     return colorId ? Colors.findOne(colorId) : null;
   }
 });
