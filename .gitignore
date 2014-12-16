@@ -3,6 +3,7 @@ tests/mongo
 node_modules
 *.lock
 *.swp
+*.sublime-workspace
 
 # Compiled source #
 ###################
