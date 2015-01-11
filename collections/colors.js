@@ -6,6 +6,10 @@ var schema = new SimpleSchema({
   rgb: {
     label: 'RGB Hex String',
     type: String
+  },
+  isBright: {
+    type: Boolean,
+    defaultValue: true
   }
 });
 

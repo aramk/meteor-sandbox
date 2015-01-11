@@ -3,6 +3,7 @@
   {{#autoForm collection=collection id=formName type=formType doc=doc}}
     {{> afQuickField name="name"}}
     {{> afQuickField name="rgb"}}
+    {{> afQuickField name="isBright"}}
     {{#unless isSubForm}}
       <button type="button" class="cancel button">Cancel</button>
       <button type="submit">Submit</button>

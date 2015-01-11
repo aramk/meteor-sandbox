@@ -1,7 +1,21 @@
+var noop = function () {
+};
+
 var BaseController = RouteController.extend({
+  onBeforeAction: function() {
+    if (!this.ready()) {
+      return;
+    }
+    // This redirects users to a sign in form.
+    // AccountsEntry.signInRequired(this, noop);
+    this.next();
+  },
   // Don't render until we're ready (waitOn) resolved
   action: function() {
     this.ready() && this.render();
+  },
+  waitOn: function() {
+    return Meteor.subscribe('userData');
   }
 });
 

@@ -10,6 +10,9 @@ aldeed:autoform
 aldeed:collection2
 nooitaf:semantic-ui
 iron:router
+accounts-password
+accounts-ui
+#joshowens:accounts-entry
 
 aramk:collection-table
 aramk:dropdown
