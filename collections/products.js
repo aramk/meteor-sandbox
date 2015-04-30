@@ -1,3 +1,19 @@
+var sizeSchema = new SimpleSchema({
+  height: {
+    type: Number,
+    decimal: true
+  },
+  width: {
+    type: Number,
+    decimal: true
+  },
+  depth: {
+    type: Number,
+    decimal: true,
+    optional: true
+  }
+});
+
 var schema = new SimpleSchema({
   name: {
     label: 'Name',
@@ -7,6 +23,10 @@ var schema = new SimpleSchema({
     label: 'Type',
     type: String,
     allowedValues: ['Fruit', 'Vegetable']
+  },
+  size: {
+    type: sizeSchema,
+    optional: true
   },
   // azimuth: {
   //   label: 'Azimuth Array',
