@@ -18,9 +18,12 @@ TemplateClass.helpers({
   colors: function() {
     var colors = Collections.createTemporary();
     var i = 0;
-    setInterval(function() {
+    var handle = setInterval(function() {
       colors.insert({name: 'test' + i});
       i++;
+      if (i > 10) {
+        clearInterval(handle);
+      }
     }, 1000);
     return colors;
   }

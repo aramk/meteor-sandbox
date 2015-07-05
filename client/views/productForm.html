@@ -5,6 +5,10 @@
     {{> afQuickField name="name"}}
     {{> afQuickField name="isBright"}}
     {{> afQuickField name="type" type="dropdown" items=types options="allowed"}}
+
+    {{#if doc}}
+        {{> commentList series=doc._id}}
+    {{/if}}
     
     <!-- {{> afFieldInput name="azimuth" type="azimuthArray"}}
     {{> afQuickField name="size.width"}}
