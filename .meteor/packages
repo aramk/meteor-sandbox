@@ -8,7 +8,7 @@ insecure
 coffeescript
 aldeed:autoform
 aldeed:collection2
-nooitaf:semantic-ui
+semantic:ui-css
 iron:router
 accounts-password
 accounts-ui
@@ -17,3 +17,5 @@ accounts-ui
 aramk:collection-table
 aramk:dropdown
 aramk:utility
+aramk:q
+matb33:collection-hooks

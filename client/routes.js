@@ -22,8 +22,8 @@ var BaseController = RouteController.extend({
 Router.map(function() {
   this.route('tables', {path: '/', controller: BaseController, template: 'tables'});
   // Products
-  this.route('productItem', {
-    path: '/products/create', controller: BaseController, template: 'productItem',
+  this.route('productForm', {
+    path: '/products/create', controller: BaseController, template: 'productForm',
     waitOn: function() {
       return Meteor.subscribe('products');
     },
@@ -32,7 +32,7 @@ Router.map(function() {
     }
   });
   this.route('productEdit', {
-    path: '/products/:_id/edit', controller: BaseController, template: 'productItem',
+    path: '/products/:_id/edit', controller: BaseController, template: 'productForm',
     waitOn: function() {
       return Meteor.subscribe('products');
     },
