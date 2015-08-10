@@ -1,7 +1,4 @@
 <template name="tables">
-  <ul>
-    {{> collectionTable collection='Products' settings=tableSettings}}
-    <!-- {{> collectionTable collection='Contacts' settings=tableSettings}} -->
-    {{> collectionTable collection='Colors' items=colors settings=tableSettings}}
-  </ul>
+  {{> collectionTable collection='Products' settings=tableSettings}}
+  {{> collectionTable collection='Colors' items=colors settings=tableSettings}}
 </template>

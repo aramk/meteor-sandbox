@@ -22,7 +22,7 @@ var BaseController = RouteController.extend({
 Router.map(function() {
   this.route('tables', {path: '/', controller: BaseController, template: 'tables'});
   // Products
-  this.route('productForm', {
+  this.route('productCreate', {
     path: '/products/create', controller: BaseController, template: 'productForm',
     waitOn: function() {
       return Meteor.subscribe('products');
