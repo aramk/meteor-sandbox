@@ -12,6 +12,8 @@ semantic:ui-css
 iron:router
 accounts-password
 accounts-ui
+reactive-var
+less
 #joshowens:accounts-entry
 
 aramk:collection-table

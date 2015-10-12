@@ -1,3 +1,9 @@
+[submodule "packages/meteor-collection-table"]
+	path = packages/meteor-collection-table
+	url = https://github.com/aramk/meteor-collection-table.git
+[submodule "packages/meteor-utility"]
+	path = packages/meteor-utility
+	url = https://github.com/aramk/meteor-utility.git
 [submodule "packages/meteor-autoform"]
 	path = packages/meteor-autoform
 	url = https://github.com/aramk/meteor-autoform.git

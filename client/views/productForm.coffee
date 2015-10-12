@@ -3,7 +3,7 @@ Meteor.startup ->
   Form = Forms.defineModelForm
     name: 'productForm'
     collection: Products
-    reactive: true
+    # reactive: true
     hooks:
       docToForm: (doc) ->
         doc.test = 123
