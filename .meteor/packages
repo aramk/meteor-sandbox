@@ -20,7 +20,7 @@ aramk:collection-table
 aramk:dropdown
 aramk:notifications
 # aramk:comments
-aramk:utility
 aramk:q
 matb33:collection-hooks
 sewdn:collection-behaviours
+urbanetic:utility
