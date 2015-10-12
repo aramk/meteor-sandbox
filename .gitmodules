@@ -7,3 +7,12 @@
 [submodule "packages/meteor-utility"]
 	path = packages/meteor-utility
 	url = https://github.com/urbanetic/meteor-utility.git
+[submodule "packages/meteor-dropdown"]
+	path = packages/meteor-dropdown
+	url = https://github.com/aramk/meteor-dropdown.git
+[submodule "packages/meteor-notifications"]
+	path = packages/meteor-notifications
+	url = https://github.com/aramk/meteor-notifications.git
+[submodule "packages/meteor-comments"]
+	path = packages/meteor-comments
+	url = https://github.com/aramk/meteor-comments.git

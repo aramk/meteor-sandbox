@@ -6,21 +6,23 @@
 standard-app-packages
 insecure
 coffeescript
-aldeed:autoform
-aldeed:collection2
-semantic:ui-css
-iron:router
 accounts-password
 accounts-ui
 reactive-var
 less
-#joshowens:accounts-entry
+
+aldeed:autoform
+aldeed:collection2
+semantic:ui-css
+iron:router
+
+matb33:collection-hooks
+# TODO(aramk) https://github.com/meteor-velocity/velocity/issues/200
+#sewdn:collection-behaviours
 
 aramk:collection-table
 aramk:dropdown
 aramk:notifications
-# aramk:comments
+aramk:comments
 aramk:q
-matb33:collection-hooks
-sewdn:collection-behaviours
 urbanetic:utility
