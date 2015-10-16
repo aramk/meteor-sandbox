@@ -5,6 +5,7 @@
       <div class="ui menu">
         <a class="browse item">
           {{userName}}
+          {{> unreadNotificationLabel}}
           <i class="dropdown icon"></i>
         </a>
       </div>
@@ -12,7 +13,10 @@
         <div class="ui one column internally celled grid">
           <div class="row">
             <div class="column notifications">
-              <h4 class="ui header">Notifications</h4>
+              <h4 class="ui header">
+                <!-- <i class="announcement icon"></i> -->
+                Notifications
+              </h4>
               {{> notificationList}}
             </div>
           </div>
