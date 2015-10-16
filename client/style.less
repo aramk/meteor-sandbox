@@ -3,10 +3,20 @@ body {
 }
 
 .user.menu > .ui.popup {
+  margin-top: 0;
   max-width: 340px;
+  .column.notifications {
+    padding-bottom: 0;
+    .notification-list {
+      max-height: 60vh;
+      overflow: auto;
+      .notifications {
+        margin-bottom: 1rem;
+      }
+    }
+  }
   .column.actions {
     padding: 0;
-    padding-top: 0.5rem;
     text-align: center;
   }
   .ui.menu.actions {

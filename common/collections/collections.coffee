@@ -22,3 +22,20 @@ if Meteor.isClient
   # //   'This is another comment'
   # // ]
   # // _.each comments, (comment, i) -> _.delay (-> Comments.add(comment)), 500 * i
+
+Events.config()
+
+if Meteor.isServer
+
+  # NOTE: Removing for demo.
+  Events.getCollection().remove({})
+  
+  index = 0
+  handle = setInterval (Meteor.bindEnvironment ->
+    if index >= 1000
+      clearIndex(handle)
+      return
+    Events.add
+      title: 'Event ' + index++
+      content: 'This is a sample event'
+  ), 5000
