@@ -8,10 +8,10 @@ if Meteor.isClient
 
   notifs = [
     {title: 'Information', content: 'This is a test'}
-    {title: 'Information', content: 'This is a test', level: 'info'}
-    {title: 'Warning', content: 'This is a test', level: 'warn'}
-    {title: 'Error', content: 'This is a test', level: 'error'}
-    {title: 'Debug', content: new Array(20).join('This is a test.'), level: 'debug'}
+    {title: 'Information', content: 'This is a test', label: 'info'}
+    {title: 'Warning', content: 'This is a test', label: 'warn'}
+    {title: 'Error', content: 'This is a test', label: 'error'}
+    {title: 'Debug', content: new Array(20).join('This is a test.'), label: 'debug'}
   ]
   _.each notifs, (notif, i) -> _.delay (-> Notifications.add(notif)), 500 * i
 

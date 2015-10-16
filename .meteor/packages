@@ -22,6 +22,7 @@ matb33:collection-hooks
 
 aramk:collection-table
 aramk:dropdown
+aramk:events
 aramk:notifications
 aramk:comments
 aramk:q

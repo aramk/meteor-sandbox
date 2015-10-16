@@ -16,3 +16,12 @@
 [submodule "packages/meteor-comments"]
 	path = packages/meteor-comments
 	url = https://github.com/aramk/meteor-comments.git
+[submodule "packages/meteor-events"]
+	path = packages/meteor-events
+	url = https://github.com/aramk/meteor-events.git
+[submodule "packages/meteor-accounts-ui"]
+	path = packages/meteor-accounts-ui
+	url = https://github.com/urbanetic/meteor-accounts-ui.git
+[submodule "packages/meteor-checkbox"]
+	path = packages/meteor-checkbox
+	url = https://github.com/aramk/meteor-checkbox.git
