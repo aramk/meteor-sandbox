@@ -1,0 +1,38 @@
+<template name="mainLayout">
+  <div class="ui menu toolbar">
+    <div class="right user menu">
+
+      <div class="ui text menu">
+        <a class="browse item">
+          {{userName}}
+          <i class="dropdown icon"></i>
+        </a>
+      </div>
+      <div class="ui flowing basic popup">
+        <div class="ui one column internally celled grid">
+          <div class="row">
+            <div class="column">
+              <h4 class="ui header">Notifications</h4>
+              {{> notificationList}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="column actions">
+              <div class="ui menu actions labeled icon borderless">
+                <a class="item"><i class="user icon"></i>Profile</a>
+                <a class="item"><i class="setting icon"></i>Settings</a>
+                <a class="item"><i class="wrench icon"></i>Admin</a>
+                <a class="item"><i class="sign out icon"></i>Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  {{> notificationBar}}
+  <div class="main container">
+    {{> yield}}
+  </div>
+</template>
