@@ -10,3 +10,6 @@ TemplateClass.rendered = ->
 
 TemplateClass.helpers
   userName: -> Meteor.user()?.profile.name
+
+TemplateClass.events
+  'click .clear-all': -> Notifications.readAll()
