@@ -10,6 +10,7 @@ TemplateClass.rendered = ->
 
 TemplateClass.helpers
   userName: -> Meteor.user()?.profile.name
+  hasUnreadNotifications: -> Notifications.getUnreadCount() > 0
 
 TemplateClass.events
   'click .clear-all': -> Notifications.readAll()

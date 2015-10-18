@@ -23,8 +23,6 @@ if Meteor.isClient
   # // ]
   # // _.each comments, (comment, i) -> _.delay (-> Comments.add(comment)), 500 * i
 
-Events.config()
-
 if Meteor.isServer
 
   # NOTE: Removing for demo.
@@ -39,3 +37,6 @@ if Meteor.isServer
       title: 'Event ' + index++
       content: 'This is a sample event'
   ), 5000
+
+
+Events.config()
