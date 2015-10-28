@@ -27,16 +27,22 @@ if Meteor.isServer
 
   # NOTE: Removing for demo.
   Events.getCollection().remove({})
-  
-  index = 0
-  handle = setInterval (Meteor.bindEnvironment ->
-    if index >= 1000
-      clearIndex(handle)
-      return
-    Events.add
-      title: 'Event ' + index++
-      content: 'This is a sample event'
-  ), 5000
 
+  index = 0
+  Meteor.methods
+    'events/sample/add': ->
+      Events.add
+        title: 'Event ' + index++
+        content: 'This is a sample event'
+  
+  # index = 0
+  # handle = setInterval (Meteor.bindEnvironment ->
+  #   if index >= 1000
+  #     clearIndex(handle)
+  #     return
+  #   Events.add
+  #     title: 'Event ' + index++
+  #     content: 'This is a sample event'
+  # ), 5000
 
 Events.config()

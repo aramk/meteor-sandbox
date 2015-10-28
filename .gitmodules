@@ -25,3 +25,6 @@
 [submodule "packages/meteor-checkbox"]
 	path = packages/meteor-checkbox
 	url = https://github.com/aramk/meteor-checkbox.git
+[submodule "packages/meteor-routes"]
+	path = packages/meteor-routes
+	url = https://github.com/aramk/meteor-routes.git

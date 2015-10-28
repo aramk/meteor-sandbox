@@ -1,6 +1,9 @@
 USERNAME = 'john'
 PASSWORD = 'password'
 
+AccountsUi.config
+  account: enabledByDefault: true
+
 if Meteor.isServer
   selector = {username: USERNAME}
   Meteor.users.upsert selector, $set:
