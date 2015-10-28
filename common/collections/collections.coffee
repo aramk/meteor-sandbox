@@ -30,10 +30,16 @@ if Meteor.isServer
 
   index = 0
   Meteor.methods
-    'events/sample/add': ->
-      Events.add
-        title: 'Event ' + index++
-        content: 'This is a sample event'
+    'events/sample/add': (quantity) ->
+      quantity ?= 1
+      _.times quantity, ->
+        Events.add
+          title: 'Event ' + index++
+          content: 'This is a sample event'
+
+  _.delay ->
+    Meteor.call('events/sample/add', 3)
+  , 5000
   
   # index = 0
   # handle = setInterval (Meteor.bindEnvironment ->
