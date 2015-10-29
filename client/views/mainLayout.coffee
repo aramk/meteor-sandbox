@@ -9,7 +9,7 @@ TemplateClass.rendered = ->
     on: 'click'
     onVisible: ->
       # Scroll to the top of the notification list if unread items exist so they're visible.
-      if Notifications.getUnreadCount() > 0 then TemplateClass.scrollToTop($popup)
+      if Notifications.getUnreadCount() > 0 then Template.notificationList.scrollToTop($popup)
 
 TemplateClass.helpers
   userName: -> Meteor.user()?.profile.name

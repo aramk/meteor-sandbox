@@ -37,7 +37,7 @@ if Meteor.isServer
           title: 'Event ' + index++
           content: 'This is a sample event'
 
-  _.delay ->
+  _.delay Meteor.bindEnvironment ->
     Meteor.call('events/sample/add', 3)
   , 5000
   
